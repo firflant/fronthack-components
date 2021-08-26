@@ -1,0 +1,21 @@
+@import '../../style/variables'
+@import '../../style/mixins'
+
+// Section
+//
+// Simple section wrapper with bg and container.
+
+
+// Block
+// --------------------------------------------------
+.section
+  padding: 40px 0
+  background-color: $gray-lighter
+  overflow: hidden
+  +breakpoint(tablet)
+    padding: 60px 0
+
+// Elements
+// --------------------------------------------------
+.section__container
+  +container

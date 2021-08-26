@@ -53,6 +53,8 @@ import Form from '../src/components/Form'
 import FormREADME from '../src/components/Form/README.md'
 import FullscreenBoxEXAMPLE from '../src/components/FullscreenBox/EXAMPLE'
 import FullscreenBoxREADME from '../src/components/FullscreenBox/README.md'
+import GridEXAMPLE from '../src/components/Grid/EXAMPLE'
+import GridREADME from '../src/components/Grid/README.md'
 import HamburgerNavEXAMPLE from '../src/components/HamburgerNav/EXAMPLE'
 import HamburgerNavREADME from '../src/components/HamburgerNav/README.md'
 import IconEXAMPLE from '../src/components/Icon/EXAMPLE'
@@ -85,6 +87,8 @@ import ProgressBarEXAMPLE from '../src/components/ProgressBar/EXAMPLE'
 import ProgressBarREADME from '../src/components/ProgressBar/README.md'
 import RatingEXAMPLE from '../src/components/Rating/EXAMPLE'
 import RatingREADME from '../src/components/Rating/README.md'
+import SectionEXAMPLE from '../src/components/Section/EXAMPLE'
+import SectionREADME from '../src/components/Section/README.md'
 import SmartphoneWrapperEXAMPLE from '../src/components/SmartphoneWrapper/EXAMPLE'
 import SmartphoneWrapperREADME from '../src/components/SmartphoneWrapper/README.md'
 import SocialLinksEXAMPLE from '../src/components/SocialLinks/EXAMPLE'
@@ -95,6 +99,8 @@ import SpinnerEXAMPLE from '../src/components/Spinner/EXAMPLE'
 import SpinnerREADME from '../src/components/Spinner/README.md'
 import StepperEXAMPLE from '../src/components/Stepper/EXAMPLE'
 import StepperREADME from '../src/components/Stepper/README.md'
+import TableEXAMPLE from '../src/components/Table/EXAMPLE'
+import TableREADME from '../src/components/Table/README.md'
 import TabsEXAMPLE from '../src/components/Tabs/EXAMPLE'
 import TabsREADME from '../src/components/Tabs/README.md'
 import TagsEXAMPLE from '../src/components/Tags/EXAMPLE'
@@ -223,6 +229,10 @@ storiesOf('Components/FullscreenBox', module)
   .addParameters({ readme: { sidebar: FullscreenBoxREADME } })
   .add('default', () => <FullscreenBoxEXAMPLE />)
 
+storiesOf('Components/Grid', module)
+  .addParameters({ readme: { sidebar: GridREADME } })
+  .add('default', () => <GridEXAMPLE />)
+
 storiesOf('Components/HamburgerNav', module)
   .addParameters({ readme: { sidebar: HamburgerNavREADME } })
   .add('default', () => <HamburgerNavEXAMPLE />)
@@ -291,6 +301,10 @@ storiesOf('Components/Rating', module)
   .addParameters({ readme: { sidebar: RatingREADME } })
   .add('default', () => <RatingEXAMPLE />)
 
+storiesOf('Components/Section', module)
+  .addParameters({ readme: { sidebar: SectionREADME } })
+  .add('default', () => <SectionEXAMPLE />)
+
 storiesOf('Components/SmartphoneWrapper', module)
   .addParameters({ readme: { sidebar: SmartphoneWrapperREADME } })
   .add('default', () => <SmartphoneWrapperEXAMPLE />)
@@ -314,6 +328,10 @@ storiesOf('Components/Stepper', module)
 storiesOf('Components/Tabs', module)
   .addParameters({ readme: { sidebar: TabsREADME } })
   .add('default', () => <TabsEXAMPLE />)
+
+storiesOf('Components/Table', module)
+  .addParameters({ readme: { sidebar: TableREADME } })
+  .add('default', () => <TableEXAMPLE />)
 
 storiesOf('Components/Tags', module)
   .addParameters({ readme: { sidebar: TagsREADME } })
