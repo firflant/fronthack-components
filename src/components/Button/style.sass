@@ -33,6 +33,10 @@
     color: white
     background-color: lighten($gray-dark, 10%)
 
+  // Treat all children as inline elements.
+  & > *
+    display: inline-block
+
 .btn + .btn
   margin-left: 15px
 
@@ -101,11 +105,11 @@
   border: none
   padding-left: 0
   padding-right: 0
-  color: $brand-secondary
+  color: $brand-primary
   background-color: transparent
 
   &:hover, &:focus
-    color: lighten($brand-secondary, 10%)
+    color: lighten($brand-primary, 10%)
     background-color: transparent
 
 .btn--disabled,
