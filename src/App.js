@@ -45,8 +45,6 @@ import Form, {
   MultiImageUpload,
 } from 'react-standalone-form'
 
-import 'core-js/fn/string/starts-with'
-import 'core-js/fn/array/includes'
 
 class App extends React.Component {
   state = {
