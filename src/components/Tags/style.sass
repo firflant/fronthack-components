@@ -1,24 +1,21 @@
 @import '../../style/variables'
 
+$gap: 6px
 
 // Block
 // --------------------------------------------------
 .tags
   display: inline-flex
   flex-wrap: wrap
+  margin: -#{$gap / 2}
 
 
 // Elements
 // --------------------------------------------------
 .tags__tag
   display: block
-  background-color: $gray-light
-  padding: 0 0.3em
-  border-radius: 2px
-  margin-bottom: 0.3em
-
-  &::before
-    content: '#'
-
-  &:not(:last-child)
-    margin-right: 0.3em
+  padding: 2px 14px
+  margin: #{$gap / 2}
+  border: 1px solid $gray-dark
+  border-radius: 22px
+  color: $gray-dark
