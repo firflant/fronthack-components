@@ -9,29 +9,26 @@
 // Component
 // --------------------------------------------------
 .breadcrumb
-  margin-bottom: 20px
-  font-size: 14px
-  padding: 10px 0
-  background-color: transparent
+  font-size: 12px
+  line-height: normal
+  color: $gray-base
+  padding:
+    top: 32px
+    bottom: 32px
   +breakpoint(tablet)
-    margin-bottom: 30px
+    font-size: 16px
+    line-height: 22px
 
 
 // Elements
 // --------------------------------------------------
+.breadcrumb_container
+  +container
+
 .breadcrumb__item
-  color: $gray-light
   display: inline
-
-  &:hover
-    text-decoration: none
-
-  &::after
-    content: ' > '
-    color: $gray-light
+  text-decoration: none
+  color: $gray-base
 
   &:last-of-type
     color: $gray-dark
-
-    &::after
-      content: none

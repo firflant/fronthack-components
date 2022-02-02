@@ -9,7 +9,20 @@ fronthack component Breadcrumb
 #### JSX example:
 
 ```jsx
-<Breadcrumb items={['Docs', 'Components API', 'Button']} />
+<Breadcrumb items={[
+  {
+    path: '/',
+    name: 'Docs',
+  },
+  {
+    path: '/',
+    name: 'Components API',
+  },
+  {
+    path: '/',
+    name: 'Button',
+  },
+]} />
 ```
 
 ##### Properties
@@ -21,8 +34,8 @@ fronthack component Breadcrumb
 
 ```html
 <nav class="breadcrumb">
-  <a href="#" class="breadcrumb__item">Docs</a>
-  <a href="#" class="breadcrumb__item">Components API</a>
-  <a href="#" class="breadcrumb__item">Button</a>
+  <a href="/" class="breadcrumb__item">Docs</a>
+  <a href="/" class="breadcrumb__item">Components API</a>
+  <a href="/" class="breadcrumb__item">Button</a>
 </nav>
 ```
