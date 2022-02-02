@@ -1,18 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import './style.sass'
-import Icon from '../Icon'
 
+import Icon from '../Icon'
+import PropTypes from 'prop-types'
+import React from 'react'
+import classNames from 'classnames'
 
 const HamburgerNav = ({ links, className }) => {
-  const [show, setShow] = React.useState()
+  const [isOpen, setIsOpen] = React.useState(false)
   return (
-    <div className={`hamburger-nav ${show ? 'is-visible' : ''} ${className}`}>
-      <div className='hamburger-nav__trigger' onClick={() => setShow(true)}>
+    <div className={classNames('hamburger-nav', {
+      'hamburger-nav--open': isOpen,
+    }, className)}>
+      <div className='hamburger-nav__trigger' onClick={() => setIsOpen(true)}>
         <div className='hamburger-nav__icon' />
       </div>
-      {show &&
-        <div className='hamburger-nav__overlay' onClick={() => setShow(false)} />
+      {isOpen &&
+        <div className='hamburger-nav__overlay' onClick={() => setIsOpen(false)} />
       }
       <div className='hamburger-nav__wrapper'>
         <nav className='hamburger-nav__menu'>
